@@ -5,10 +5,10 @@ import instaloader
 loader = instaloader.Instaloader()
 
 # Login to Instagram
-loader.login("cepharsbonacci", "rivaldo3440K*")
+loader.login("your_username", "your password")
 
 # Scrape the private profile
-profile = instaloader.Profile.from_username(loader.context, "kaka_rutoh")
+profile = instaloader.Profile.from_username(loader.context, "username of account to be scrapped")
 
 # Iterate over the profile's posts and download the photos
 for post in profile.get_posts():
